@@ -16,8 +16,12 @@ public class Mitarbeiter {
 
 
 	public String getInfo(String flag) {
-		// switch ..
-		return null;
+	return switch (flag) {
+    case "#familyName" -> this.familyName;
+    case "#firstName"  -> this.firstName;
+    case "#role".      -> this.role;
+    case "#yearOfEntry"     -> this.yearOfEntry;
+};
 	}
 
 }
